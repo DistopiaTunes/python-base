@@ -2,7 +2,7 @@
 """Hello World Multi Linguas
 
 Dependendo da lingua configurada no ambiente o programa exibe
-a mensagem correspondente
+a mensagem correspondente (teste)
 
 Usage:
 
