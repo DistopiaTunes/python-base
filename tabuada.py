@@ -20,9 +20,9 @@ __author__ = "raphael"
 # numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 numeros  = list(range(1, 11))
 
-# Iterable (percorríveis)
+# Iterable (percorríveis) (corre a lista)
 
-#para cada numero em numeros:
+#para cada "numero" dentro da sequência "numeros":
 for numero in numeros:
     print("Tabuada do:", numero)
     for outro_numero in numeros:
