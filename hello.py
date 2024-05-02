@@ -15,6 +15,8 @@ Execução:
     python3 hello.py
     ou
     ./hello.py
+
+    ultima visita - 02/05/2024
 """
 __version__ = "0.0.1"
 __author__ = "Raphael"
