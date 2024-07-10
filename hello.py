@@ -24,11 +24,11 @@ __licence__ = "copyleft"
 
 import os #biblioteca externa
 
-current_language = os.getenv("LANG", "en_US")[:7]
+current_language = os.getenv("LANG", "en_US")[:7]#mudado de 5 para 7 por causa do utf-8
 
 msg = {
 
-    "C.UTF-8": "Hello, World!",
+    "C.UTF-8": "Hello, World!", # venv fica com utf-9
     "en_US": "Hello, World!",
     "pt_BR": "Olá, Mundo!",
     "it_IT": "Ciao, Mondo!",
