@@ -12,10 +12,30 @@ email_tmpl = """
    ...: Preço promocional %(preco).2f
    ...: """
 
-In [5]: clientes = ["Maria", "Joao", "Raphael"]
 
-In [6]: for cliente in clientes:
-   ...:     print(email_tmpl % {"nome": cliente, "produto":"caneta", "
-   ...: texto": "Escrever muito bem", "link":"https://canetaslegais.co
-   ...: m", "quantidade": 1, "preco": 50.5})
-   ...:
+import sys
+import os
+
+arguments = sys.argv[1:]
+if not argument:
+    print ("informa o nome do arquivo emails")
+    sys.exit(1)
+filename = arguments.[0]
+
+path = os.curdir
+filepath = os.path.join(path, filename)
+
+clientes = ["Maria", "Joao", "Raphael"]
+
+for cliente in clientes:
+    print(
+        email_tmpl 
+        % {
+         "nome": cliente, 
+         "produto":"caneta",
+          "texto": "Escrever muito bem",
+          "link":"https://canetaslegais.com",
+          "quantidade": 1, 
+          "preco": 50.5
+          }
+)
